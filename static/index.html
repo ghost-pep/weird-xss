@@ -1,0 +1,23 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Weird XSS</title>
+</head>
+<body>
+
+<h1>Weird XSS</h1>
+
+<form action="/show_user" method="POST">
+	First Name:<br>
+	<input type="text" name="fname" value=""><br>
+	Last Name:<br>
+	<input type="text" name="lname" value=""><br>
+	Street:<br>
+	<input type="text" name="street" value=""><br>
+	City:<br>
+	<input type="text" name="city" value=""><br>
+	<input type="submit" value="Submit">
+</form>
+
+</body>
+</html> 
