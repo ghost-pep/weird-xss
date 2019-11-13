@@ -15,7 +15,7 @@ fn index() -> impl Responder {
 }
 
 fn display_user(form: web::Form<FormData>) -> impl Responder {
-    if form.fname.len() > 22 || form.lname.len() > 22 || form.city.len() > 22 {
+    if form.fname.len() > 24 || form.lname.len() > 24 || form.city.len() > 24 {
         return HttpResponse::BadRequest().body("Input too long")
     }
 
