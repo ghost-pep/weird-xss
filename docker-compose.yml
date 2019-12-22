@@ -1,0 +1,7 @@
+version: "3"
+services:
+  web:  
+    build: ./
+    image: weird-xss
+    ports:
+      - "8088:8088"
