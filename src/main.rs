@@ -39,7 +39,7 @@ fn main() {
             .route("/show_user", web::post().to(display_user))
             .service(fs::Files::new("/", "./static").index_file("index.html"))
     })
-    .bind_ssl("127.0.0.1:8088", builder)
+    .bind_ssl("0.0.0.0:8088", builder)
     .unwrap()
     .run()
     .unwrap();
